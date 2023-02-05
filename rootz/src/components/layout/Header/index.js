@@ -1,5 +1,7 @@
 import React from "react";
-import {Header} from "./styles";
+import {Header, ToggleButtonWrapper} from "./styles";
+import Logo from "../../img/Logo";
+import ToggleMenu from "../../img/Toggle";
 
 type State = {
     toggleMenu: boolean;
@@ -25,8 +27,10 @@ class HeaderComponent extends React.Component {
     render() {
         return (
             <Header>
-                <button onClick={this.toggleMenu}>
-                </button>
+                    <Logo/>
+                <ToggleButtonWrapper onClick={this.toggleMenu}>
+                    <ToggleMenu/>
+                </ToggleButtonWrapper>
                 {this.state.toggleMenu && this.renderMenuContainer()}
             </Header>
         );

@@ -12,3 +12,8 @@ export const Header = styled.div`
   padding: 0 20px;
   z-index: 10;
 `;
+
+export const ToggleButtonWrapper = styled.button`
+  border: none;
+  background: none;
+`;
