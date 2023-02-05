@@ -1,6 +1,9 @@
 const colors = {
-    primary: '#000',
-    secondary: '#fff',
+    Froly: '#F2726C',
+    WaxFlower: '#FFBD9E',
+    Gray: '#807C7C',
+    HintOfRed: '#F7F3F4',
+    EbonyClay: '#222433',
 };
 
 const sizes = {
