@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import {colors} from "../../../theme/default/styles";
 
+export const Wrapper = styled.div`
+  background-color: ${colors.HintOfRed};
+`;
+
 export const Header = styled.div`
   height: 107px;
   position: sticky;
@@ -16,4 +20,5 @@ export const Header = styled.div`
 export const ToggleButtonWrapper = styled.button`
   border: none;
   background: none;
+  padding: 0;
 `;

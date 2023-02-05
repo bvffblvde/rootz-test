@@ -1,7 +1,8 @@
 import React from "react";
-import {Header, ToggleButtonWrapper} from "./styles";
+import {Header, ToggleButtonWrapper, Wrapper} from "./styles";
 import Logo from "../../img/Logo";
-import ToggleMenu from "../../img/Toggle";
+import ToggleMenuComponent from "../ToggleMenu";
+import {HR} from "../../../styles";
 
 type State = {
     toggleMenu: boolean;
@@ -16,23 +17,18 @@ class HeaderComponent extends React.Component {
         this.setState({toggleMenu: !this.state.toggleMenu});
     };
 
-    renderMenuContainer = () => {
-        return (
-            <>
-                <button onClick={this.toggleMenu}>Apply</button>
-            </>
-        );
-    };
-
     render() {
         return (
-            <Header>
+            <Wrapper>
+                <Header>
                     <Logo/>
-                <ToggleButtonWrapper onClick={this.toggleMenu}>
-                    <ToggleMenu/>
-                </ToggleButtonWrapper>
-                {this.state.toggleMenu && this.renderMenuContainer()}
-            </Header>
+                    <ToggleButtonWrapper onClick={this.toggleMenu}>
+                        <ToggleMenuComponent/>
+                    </ToggleButtonWrapper>
+                    {this.state.toggleMenu}
+                </Header>
+                <HR/>
+            </Wrapper>
         );
     }
 }

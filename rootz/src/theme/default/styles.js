@@ -4,6 +4,8 @@ const colors = {
     Gray: '#807C7C',
     HintOfRed: '#F7F3F4',
     EbonyClay: '#222433',
+    White: '#FFFFFF',
+    Black: '#000000',
 };
 
 const sizes = {
