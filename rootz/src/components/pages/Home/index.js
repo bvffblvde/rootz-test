@@ -2,8 +2,9 @@ import React from 'react';
 import Headline from "../../img/Headline";
 import {Card, IconArea, TextAbout} from "./styles";
 import SearchBar from "../../ui/SearchBar";
+import StartedCard from "../../StartedCard";
 
-class Dashboard extends React.Component {
+class Home extends React.Component {
 
     render() {
         return (
@@ -28,9 +29,10 @@ class Dashboard extends React.Component {
                         </div>
                     </IconArea>
                 </Card>
+                <StartedCard/>
             </div>
         );
     }
 }
 
-export default Dashboard;
+export default Home;

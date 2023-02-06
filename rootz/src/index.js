@@ -6,14 +6,14 @@ import {
     Route,
 } from "react-router-dom";
 import App from "./App";
-import Dashboard from "./components/pages/Dashboard";
+import Home from "./components/pages/Home";
 
 const rootElement = document.getElementById("root");
 render(
     <BrowserRouter>
         <Routes>
             <Route path="/" element={<App/>}>
-                <Route path="dashboard" element={<Dashboard/>}/>
+                <Route path="home" element={<Home/>}/>
             </Route>
         </Routes>
     </BrowserRouter>,

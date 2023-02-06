@@ -70,7 +70,7 @@ class ToggleMenuModal extends React.Component<Props, State> {
                     </ModalHeader>
                     <ModalBody>
                         <ButtonArea>
-                            <TextButton>Home</TextButton>
+                            <TextButton as="a" href="/home">Home</TextButton>
                             <TextButton>Our mission</TextButton>
                             <TextButton>Places</TextButton>
                             <TextButton>Team</TextButton>

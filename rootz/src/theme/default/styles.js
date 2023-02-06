@@ -7,6 +7,7 @@ const colors = {
     White: '#FFFFFF',
     Black: '#000000',
     MineShaft: '#333333',
+    BalticSea: '#1E1A20',
 };
 
 const sizes = {

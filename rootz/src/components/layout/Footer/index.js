@@ -1,5 +1,8 @@
 import React from 'react';
 import {FooterContainer, SubTitle, Text, Title} from "./styles";
+import TwitterIcon from "../../img/TwitterIcon";
+import FacebookIcon from "../../img/FacebookIcon";
+import LinkedInIcon from "../../img/LinkedinIcon";
 
 class Footer extends React.Component {
     render() {
@@ -19,6 +22,11 @@ class Footer extends React.Component {
                     </div>
                     <div>
                         <SubTitle>Social media</SubTitle>
+                        <div className="media-container">
+                            <TwitterIcon/>
+                            <FacebookIcon/>
+                            <LinkedInIcon/>
+                        </div>
                     </div>
                 </div>
             </FooterContainer>

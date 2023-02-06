@@ -2,13 +2,13 @@ import styled from "styled-components";
 import {colors} from "../../../theme/default/styles";
 
 export const FooterContainer = styled.footer`
+  flex: 0 0 auto;
   padding: 42px 30px;
   
   .media-container {
     display: flex;
     justify-content: space-between;
   }
-
 `;
 export const Title = styled.p`
   font-family: 'Poppins', serif;

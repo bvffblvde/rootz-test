@@ -19,6 +19,7 @@ type Props = {
      * Make buttons look inactive by adding the disabled boolean attribute to any button element.
      */
     disabled?: boolean,
+    fullWidth?: boolean,
     /**
      * Binds some action on button click.
      */
@@ -49,6 +50,8 @@ const ButtonStyled = styled.button((props) => {
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;
+      margin: ${props => props.margin || '0'};
+      width: ${props => props.fullWidth ? '100%' : 'auto'};
 
       ${btnTheme.default};
       ${space};
