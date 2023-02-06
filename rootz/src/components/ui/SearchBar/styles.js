@@ -23,7 +23,7 @@ export const SearchBarWrapper = styled.div`
   
   svg {
     position: relative;
-    top: 2px;
+    top: 5px;
     left: 5px;
   }
 `;

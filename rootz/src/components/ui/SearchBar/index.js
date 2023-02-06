@@ -11,7 +11,6 @@ type State = {
   term: string,
 };
 
-
 class SearchBar extends React.Component<Props, State> {
     props: Props;
     state: State;

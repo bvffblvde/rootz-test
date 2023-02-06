@@ -6,6 +6,7 @@ const colors = {
     EbonyClay: '#222433',
     White: '#FFFFFF',
     Black: '#000000',
+    MineShaft: '#333333',
 };
 
 const sizes = {
