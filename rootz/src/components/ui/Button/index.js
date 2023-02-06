@@ -20,6 +20,8 @@ type Props = {
      */
     disabled?: boolean,
     fullWidth?: boolean,
+    margin?: string,
+    padding?: string,
     /**
      * Binds some action on button click.
      */
@@ -34,7 +36,7 @@ const ButtonStyled = styled.button((props) => {
       outline: 2px solid white;
       box-shadow: 0 30px 40px rgba(240, 101, 126, 0.05);
       border: none;
-      padding: 13px 0;
+      padding: ${props => props.padding || '13px 0'};
       position: ${props => props.position || 'relative'};
       bottom: ${props => props.bottom || '0'};
       cursor: pointer;
@@ -42,6 +44,7 @@ const ButtonStyled = styled.button((props) => {
       align-items: center;
       text-align: center;
       user-select: none;
+      
       vertical-align: middle;
       white-space: normal;
       overflow: hidden;

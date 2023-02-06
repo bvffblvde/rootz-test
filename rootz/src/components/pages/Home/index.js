@@ -1,8 +1,10 @@
 import React from 'react';
 import Headline from "../../img/Headline";
-import {Card, IconArea, TextAbout} from "./styles";
+import {Card, Container, DropDownArea, SubTitle, TextAbout, Title} from "./styles";
 import SearchBar from "../../ui/SearchBar";
 import StartedCard from "../../StartedCard";
+import MembersBlock from "../../MembersBlock";
+import {Button} from "../../ui/Button";
 
 class Home extends React.Component {
 
@@ -19,17 +21,19 @@ class Home extends React.Component {
                         </TextAbout>
                     </div>
                     <SearchBar/>
-                    <IconArea>
-                        <div className="item-stack-top">
-                            <img src={require('../../img/Сard.svg').default}
-                                         alt="soft-serve-logo"/>
-                        </div>
-                        <div className="item-stack-bottom">
-                            <img src={require('../../img/Parrot.png')} alt="Parrot"/>
-                        </div>
-                    </IconArea>
+                    <MembersBlock/>
                 </Card>
+                <Container>
+                    <Title>Our Top Team</Title>
+                    <SubTitle>Learn more about how you can save our planet's nature.</SubTitle>
+                </Container>
                 <StartedCard/>
+                <Container>
+                    <Title>Ready to Get started?</Title>
+                    <SubTitle>When pattern is mentioned in interior design, it is easy to asso- ciate it with a geometric
+                        patterned wallpaper or colourful prints on interior fabrics.</SubTitle>
+                    <Button variant="primaryOrange" padding={'15px 36px'}>Contact us</Button>
+                </Container>
             </div>
         );
     }

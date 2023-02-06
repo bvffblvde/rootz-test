@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors, sizes} from "../../../theme/default/styles";
+import {colors} from "../../../theme/default/styles";
 
 export const Card = styled.div`
   background: ${colors.HintOfRed};
@@ -17,29 +17,6 @@ export const Card = styled.div`
   }
 `;
 
-export const IconArea = styled.div`
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  position: relative;
-
-  .item-stack-top {
-    grid-column: 1 / span 8;
-    grid-row: 1;
-    padding-top: 75%;
-    z-index: 1;
-    
-    @media (min-width: ${sizes.tablet}px) {
-      grid-column: 2 / span 9;
-      padding-top: 22%;
-    }
-  }
-
-  .item-stack-bottom {
-    grid-column: 4 / -1;
-    grid-row: 1;
-  }
-`;
-
 export const TextAbout = styled.text`
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -48,4 +25,31 @@ export const TextAbout = styled.text`
   line-height: 213%;
   color: ${colors.Black};
   margin-bottom: 40px;
+`;
+
+export const Container = styled.div`
+  margin: 100px 0 0;
+  padding: 0 18px 0;
+`;
+
+export const Title = styled.p`
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 150%;
+  color: ${colors.EbonyClay};
+  margin: 0 0 20px;
+  text-transform: capitalize;
+`;
+
+export const SubTitle = styled.p`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 175%;
+  color: ${colors.BalticSea};
+  mix-blend-mode: normal;
+  opacity: 0.9;
+  margin: 0 0 32px;
 `;

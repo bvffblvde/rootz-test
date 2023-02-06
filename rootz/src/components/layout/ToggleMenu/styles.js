@@ -38,13 +38,15 @@ export const ButtonArea = styled.div`
 `;
 
 export const Modal = styled.div`
-  position: fixed;
-  top: 0;
+  position: absolute;
   left: 0;
-  width: 100%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 2000;
   font-family: Poppins, sans-serif;
   animation: ease-in-out 0.3s;
     animation-name: fadeInOpacity;

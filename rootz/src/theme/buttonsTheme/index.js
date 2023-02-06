@@ -20,6 +20,7 @@ const theme = {
             borderRadius: '40px',
             padding: '15px',
             fontSize: '12px',
+            textTransform: 'uppercase',
         },
         hover: {
             color: colors.Froly,
