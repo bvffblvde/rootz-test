@@ -28,7 +28,7 @@ class SearchBar extends React.Component<Props, State> {
                 onChange={event => this.onInputChange(event.target.value)}
                 placeholder="Find the place to help"
             />
-          <Button variant="primaryOrange" onClick={() => this.props.onSearchTermChange(this.state.term)}>Search</Button>
+          <Button variant="primaryOrange" padding={'15px 16px'} onClick={() => this.props.onSearchTermChange(this.state.term)}>Search</Button>
         </SearchBarWrapper>
     );
   }

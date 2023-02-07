@@ -5,7 +5,8 @@ export const SearchBarWrapper = styled.div`
   box-shadow: 0 20px 20px rgba(240, 101, 126, 0.05);
   border-radius: 40px;
   background-color: ${colors.White};
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   padding: 8px;
   text-align: center;
   
@@ -23,7 +24,7 @@ export const SearchBarWrapper = styled.div`
   
   svg {
     position: relative;
-    top: 5px;
-    left: 5px;
+    top: 12px;
+    left: 15px;
   }
 `;

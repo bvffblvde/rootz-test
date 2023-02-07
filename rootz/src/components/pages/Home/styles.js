@@ -32,6 +32,11 @@ export const Container = styled.div`
   padding: 0 18px 0;
 `;
 
+export const SliderArea = styled.div`
+  background: ${colors.WaxFlower};
+  margin-top: 76px;
+`;
+
 export const Title = styled.p`
   font-family: 'Poppins', serif;
   font-style: normal;
@@ -52,4 +57,57 @@ export const SubTitle = styled.p`
   mix-blend-mode: normal;
   opacity: 0.9;
   margin: 0 0 32px;
+`;
+
+export const TeamPictureArea = styled.div`
+  margin-bottom: 110px;
+  
+  .item-stack-top {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+  .item-stack-bottom {
+    content: ' ';
+    display: table;
+    clear: both;
+    position: relative;
+    margin-top: -12%;
+    margin-left: 10%
+  }
+
+  .item-stack-bottom-last {
+    content: ' ';
+    display: table;
+    clear: both;
+    position: relative;
+    margin-top: -20%;
+  }
+
+  .item-stack-left {
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .item-stack-right {
+    float: right;
+    margin-left: -100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .item-stack-bottom-right {
+    padding-top: 15%;
+    margin-right: 10%;
+    float: right;
+  }
+  
+  .item-stack-bottom-left {
+    padding-top: 15%;
+    padding-left: 15%;
+    float: left;
+  }
 `;
