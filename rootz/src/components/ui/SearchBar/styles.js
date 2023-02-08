@@ -28,7 +28,7 @@ export const SearchBarWrapper = styled.div`
     left: 15px;
   }
   
-  @media (min-width: ${sizes.desktop}px) {
+  @media (min-width: ${sizes.tablet}px) {
     margin-left: 25%;
     width: 50%;
   }

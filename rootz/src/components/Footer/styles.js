@@ -31,8 +31,12 @@ export const FooterContainer = styled.footer`
     grid-row-start: 2;
     grid-row-end: 2;
   }
+
+  @media (min-width: ${sizes.tabletMin}px) {
+    padding: 80px;
+  }
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.tabletMax}px) {
     display: flex;
     justify-content: space-between;
     padding: 96px 160px;

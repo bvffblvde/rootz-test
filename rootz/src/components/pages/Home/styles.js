@@ -9,7 +9,7 @@ export const Card = styled.div`
   .wrapper {
     margin: 30px 0 40px;
 
-    @media (min-width: ${sizes.desktop}px) {
+    @media (min-width: ${sizes.netbook}px) {
       margin: 30px 0 48px;
     }
   }
@@ -19,9 +19,18 @@ export const Card = styled.div`
     margin: auto;
     width: 336px;
     height: 181px;
-
-    @media (min-width: ${sizes.desktop}px) {
+    
+    @media (max-width: ${sizes.mobileMax}px) {
+      width: 300px;
+    }
+    
+    @media (min-width: ${sizes.tablet}px) {
       width: 543px;
+      height: 293px;
+    }
+
+    @media (min-width: ${sizes.netbook}px) {
+      width: 600px;
       height: 293px;
     }
   }
@@ -31,7 +40,13 @@ export const Card = styled.div`
 
     @media (min-width: ${sizes.desktop}px) {
       display: flex;
+      justify-content: space-evenly;
     }
+  }
+
+  @media (min-width: ${sizes.netbook}px) {
+    padding: 120px 80px 0;
+    display: block;
   }
 
   @media (min-width: ${sizes.desktop}px) {
@@ -57,12 +72,16 @@ export const Container = styled.div`
   padding: 0 18px 0;
   
   .drop-list-area {
-    @media (min-width: ${sizes.desktop}px) {
+    @media (min-width: ${sizes.netbook}px) {
       width: 50%;
     }
   }
+
+  @media (min-width: ${sizes.tabletMin}px) {
+    padding: 0 80px 80px;
+  }
   
-  @media (min-width: ${sizes.desktop}px) {
+  @media (min-width: ${sizes.netbook}px) {
     margin: 0;
     padding: 0 160px 195px;
     display: flex;
@@ -75,7 +94,7 @@ export const SliderArea = styled.div`
   margin-top: 76px;
   height: 375px;
   
-  @media (min-width: ${sizes.desktop}px) {
+  @media (min-width: ${sizes.netbook}px) {
     margin-top: 0;
     height: 655px;
   }
@@ -89,7 +108,7 @@ export const Title = styled.p`
   margin: 0 0 20px;
   text-transform: capitalize;
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.netbook}px) {
     font-size: 40px;
     line-height: 56px;
     margin: 0 0 40px;
@@ -113,8 +132,12 @@ export const SubTitle = styled.p`
 `;
 
 export const CardArea = styled.div`
+
+  @media (min-width: ${sizes.tabletMin}px) {
+    padding: 0 80px 0;
+  }
   
-  @media (min-width: ${sizes.desktop}px) {
+  @media (min-width: ${sizes.netbook}px) {
     padding: 124px 160px 195px;
   }
 `;
@@ -124,7 +147,7 @@ export const TeamContainer = styled.div`
   padding: 100px 18px 0;
   text-align: center;
   
-  @media (min-width: ${sizes.desktop}px) {
+  @media (min-width: ${sizes.netbook}px) {
     margin: 0;
     padding: 195px 160px 0;
     display: grid;

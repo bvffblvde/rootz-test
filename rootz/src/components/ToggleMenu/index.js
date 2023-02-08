@@ -16,7 +16,6 @@ import {Button} from "../ui/Button";
 
 
 type Props = {
-    title?: string;
     children?: React.ReactNode;
     isOpen?: boolean;
     onClose?: () => void;

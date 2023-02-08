@@ -12,8 +12,13 @@ const colors = {
 };
 
 const sizes = {
+    mobileMin: 340,
+    mobileMax: 480,
+    tabletMin: 600,
     tablet: 768,
-    desktop: 1024,
+    tabletMax: 988,
+    netbook: 1024,
+    desktop: 1280,
 };
 
 export { colors, sizes };

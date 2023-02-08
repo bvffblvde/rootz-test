@@ -12,7 +12,11 @@ type Props = {
      * each serving its own semantic purpose, with a few extras thrown in for more control.
      */
     variant?: 'primary' | 'primaryOrange' | 'text',
+    /**
+     * The content of the button.
+     */
     children: ReactNode | string,
+
     position?: string,
     bottom?: string,
     /**

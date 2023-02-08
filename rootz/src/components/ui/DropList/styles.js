@@ -4,7 +4,7 @@ import {colors, sizes} from "../../../theme/default/styles";
 export const MoreInfoContainer = styled.div`
   margin-top: 48px;
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.netbook}px) {
     width: 40%;
     margin-top: 0;
   }

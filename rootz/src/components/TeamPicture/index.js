@@ -6,7 +6,7 @@ class TeamPicture extends React.Component {
         return (
             <TeamPictureArea>
                 <div className="item-stack-top">
-                    <img src={require('../img/IconTeamOne.png')} alt="Team1" className="item-stack-left"/>
+                    <img src={require('../img/IconTeamOne.png')} alt="Team1" className="item-stack-left "/>
                     <img src={require('../img/VectorOne.svg').default} className="item-stack-bottom-right"
                          alt="vector"/>
                 </div>

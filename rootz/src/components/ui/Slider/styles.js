@@ -59,13 +59,13 @@ export const SliderCard = styled.div`
           transform: translate(0, 10px);
         }
       }
-      @media (min-width: ${sizes.desktop}px) {
+      @media (min-width: ${sizes.netbook}px) {
         width: 50%;
         top: 20%;
       }
     }
     
-    @media (min-width: ${sizes.desktop}px) {
+    @media (min-width: ${sizes.netbook}px) {
       padding-top: 90%;
     }
   }
