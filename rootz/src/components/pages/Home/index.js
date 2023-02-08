@@ -15,16 +15,22 @@ class Home extends React.Component {
         return (
             <div>
                 <Card>
-                    <div>
-                        <Headline className="icon-position"/>
+                    <div className="flex-container">
+                        <div>
+                            <div>
+                                <Headline className="icon-position"/>
+                            </div>
+                            <div className="wrapper">
+                                <TextAbout>The scale of the challenges facing our planet can seem daunting, but we can
+                                    all
+                                    do
+                                    something.
+                                </TextAbout>
+                            </div>
+                            <SearchBar/>
+                        </div>
+                        <MembersBlock/>
                     </div>
-                    <div className="wrapper">
-                        <TextAbout>The scale of the challenges facing our planet can seem daunting, but we can all do
-                            something.
-                        </TextAbout>
-                    </div>
-                    <SearchBar/>
-                    <MembersBlock/>
                 </Card>
                 <Container>
                     <Title>Our Top Team</Title>

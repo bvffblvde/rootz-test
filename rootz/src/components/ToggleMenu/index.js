@@ -77,7 +77,7 @@ class ToggleMenuModal extends React.Component<Props, State> {
                         </ButtonArea>
                     </ModalBody>
                     <ModalFooter>
-                        <Button variant="primary" onClick={this.closeMenu}>Apply</Button>
+                        <Button variant="primary" fullWidth onClick={this.closeMenu}>Apply</Button>
                     </ModalFooter>
                 </ModalContent>
             </Modal>

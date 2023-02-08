@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../../theme/default/styles";
+import {colors, sizes} from "../../../theme/default/styles";
 
 export const Card = styled.div`
   background: ${colors.HintOfRed};
@@ -14,6 +14,18 @@ export const Card = styled.div`
   .icon-position {
     display: block;
     margin: auto;
+  }
+
+  .flex-container {
+    display: block;
+
+    @media (min-width: ${sizes.tablet}px) {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding: 120px 80px 0;
   }
 `;
 
