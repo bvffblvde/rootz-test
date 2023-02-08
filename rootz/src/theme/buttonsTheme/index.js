@@ -26,18 +26,5 @@ const theme = {
             backgroundColor: colors.White,
         },
     },
-    text: {
-        default: {
-            color: colors.Gray,
-            backgroundColor: colors.Gray,
-            outlineColor: colors.Gray,
-        },
-        hover: {
-            color: colors.Gray,
-            backgroundColor: colors.Gray,
-            outlineColor: colors.Gray,
-
-        },
-    },
 };
 export { theme };

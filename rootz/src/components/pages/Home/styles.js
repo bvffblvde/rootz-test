@@ -9,7 +9,7 @@ export const Card = styled.div`
   .wrapper {
     margin: 30px 0 40px;
 
-    @media (min-width: ${sizes.tablet}px) {
+    @media (min-width: ${sizes.desktop}px) {
       margin: 30px 0 48px;
     }
   }
@@ -20,7 +20,7 @@ export const Card = styled.div`
     width: 336px;
     height: 181px;
 
-    @media (min-width: ${sizes.tablet}px) {
+    @media (min-width: ${sizes.desktop}px) {
       width: 543px;
       height: 293px;
     }
@@ -29,12 +29,12 @@ export const Card = styled.div`
   .flex-container {
     display: block;
 
-    @media (min-width: ${sizes.tablet}px) {
+    @media (min-width: ${sizes.desktop}px) {
       display: flex;
     }
   }
 
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     padding: 120px 80px 0;
     display: flex;
   }
@@ -57,12 +57,12 @@ export const Container = styled.div`
   padding: 0 18px 0;
   
   .drop-list-area {
-    @media (min-width: ${sizes.tablet}px) {
+    @media (min-width: ${sizes.desktop}px) {
       width: 50%;
     }
   }
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     margin: 0;
     padding: 0 160px 195px;
     display: flex;
@@ -73,9 +73,11 @@ export const Container = styled.div`
 export const SliderArea = styled.div`
   background: ${colors.WaxFlower};
   margin-top: 76px;
+  height: 375px;
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     margin-top: 0;
+    height: 655px;
   }
 `;
 
@@ -110,62 +112,22 @@ export const SubTitle = styled.p`
   }
 `;
 
-export const TeamPictureArea = styled.div`
-  margin-bottom: 110px;
-
-  .item-stack-top {
-    content: ' ';
-    display: table;
-    clear: both;
-  }
-
-  .item-stack-bottom {
-    content: ' ';
-    display: table;
-    clear: both;
-    position: relative;
-    margin-top: -12%;
-    margin-left: 10%
-  }
-
-  .item-stack-bottom-last {
-    content: ' ';
-    display: table;
-    clear: both;
-    position: relative;
-    margin-top: -20%;
-  }
-
-  .item-stack-left {
-    float: left;
-    margin-right: -100%;
-    position: relative;
-    z-index: 1;
-  }
-
-  .item-stack-right {
-    float: right;
-    margin-left: -100%;
-    position: relative;
-    z-index: 1;
-  }
-
-  .item-stack-bottom-right {
-    padding-top: 15%;
-    margin-right: 10%;
-    float: right;
-  }
-
-  .item-stack-bottom-left {
-    padding-top: 15%;
-    padding-left: 15%;
-    float: left;
+export const CardArea = styled.div`
+  
+  @media (min-width: ${sizes.desktop}px) {
+    padding: 124px 160px 195px;
   }
 `;
 
-export const CardArea = styled.div`
+export const TeamContainer = styled.div`
+  margin: 0 0 100px;
+  padding: 100px 18px 0;
+  text-align: center;
   
-  @media (min-width: ${sizes.tablet}px) {
-    padding: 124px 160px 195px;
+  @media (min-width: ${sizes.desktop}px) {
+    margin: 0;
+    padding: 195px 160px 0;
+    display: grid;
+    justify-content: center;
   }
 `;

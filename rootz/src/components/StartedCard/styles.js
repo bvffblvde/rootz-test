@@ -10,13 +10,13 @@ export const StartedCardContainer = styled.div`
   .title-block {
     width: 100%;
 
-    @media (min-width: ${sizes.tablet}px) {
+    @media (min-width: ${sizes.desktop}px) {
       padding-top: 5%;
       width: 50%;
     }
   }
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     padding: 104px 80px;
     display: flex;
     justify-content: space-between;
@@ -33,7 +33,7 @@ export const Title = styled.p`
   margin: 0 0 20px;
   color: ${colors.EbonyClay};
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     font-size: 40px;
     line-height: 56px;
     text-align: left;
@@ -49,7 +49,7 @@ export const SubTitle = styled.p`
   color: ${colors.BalticSea};
   margin: 0 0 55px;
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     font-size: 18px;
     line-height: 32px;
   }
@@ -64,7 +64,7 @@ export const Container = styled.div`
     display: grid;
   }
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     width: 40%;
   }
 `;
@@ -77,7 +77,7 @@ export const TitleForm = styled.p`
   margin: 0 0 24px;
   text-align: center;
   
-  @media (min-width: ${sizes.tablet}px) {
+  @media (min-width: ${sizes.desktop}px) {
     font-size: 32px;
     line-height: 56px;
   }

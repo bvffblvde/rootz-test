@@ -78,11 +78,11 @@ class SwiperBar extends Component {
                     "--swiper-pagination-color": "#1E1A20",
                     "--swiper-pagination-bottom": "25px",
                     "--swiper-navigation-size": "17px",
-                    "height": "375px",
+                    "height": "100%",
                 }}
                 breakpoints={breakpoints}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Grid, EffectCards]}
-                spaceBetween={10}
+                spaceBetween={30}
                 resistance={false}
                 rewind={true}
                 navigation

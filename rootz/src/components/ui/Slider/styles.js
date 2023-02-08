@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../../theme/default/styles";
+import {colors, sizes} from "../../../theme/default/styles";
 
 export const SliderCard = styled.div`
   height: 100%;
@@ -59,6 +59,14 @@ export const SliderCard = styled.div`
           transform: translate(0, 10px);
         }
       }
+      @media (min-width: ${sizes.desktop}px) {
+        width: 50%;
+        top: 20%;
+      }
+    }
+    
+    @media (min-width: ${sizes.desktop}px) {
+      padding-top: 90%;
     }
   }
 `;

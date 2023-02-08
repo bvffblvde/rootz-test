@@ -9,7 +9,7 @@ export const IconArea = styled.div`
   .item-stack-top {
     grid-column: 1 / span 8;
     grid-row: 1;
-    padding-top: 75%;
+    padding-top: 85%;
     z-index: 1;
     
     @media (min-width: ${sizes.tablet}px) {
