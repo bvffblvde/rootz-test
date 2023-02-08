@@ -59,6 +59,8 @@ export const Modal = styled.div`
   align-items: center;
   z-index: 2000;
   font-family: Poppins, sans-serif;
+  max-height: 100vh;
+  overflow-x: hidden;
   animation: ease-in-out 0.3s;
     animation-name: fadeInOpacity;
     @keyframes fadeInOpacity {
