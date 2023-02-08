@@ -12,8 +12,6 @@ export const TitleArea = styled.div`
 `;
 
 export const DescriptionTitle = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
@@ -23,8 +21,6 @@ export const DescriptionTitle = styled.p`
 `;
 
 export const Description = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 175%;

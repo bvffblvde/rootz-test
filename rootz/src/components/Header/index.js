@@ -1,8 +1,8 @@
 import React from "react";
 import {Header, ToggleButtonWrapper, Wrapper} from "./styles";
-import Logo from "../../img/Logo";
+import Logo from "../img/Logo";
 import ToggleMenuComponent from "../ToggleMenu";
-import {HR} from "../../../styles";
+import {HR} from "../styled/HR";
 
 type State = {
     toggleMenu: boolean;

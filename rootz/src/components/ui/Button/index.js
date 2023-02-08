@@ -49,7 +49,6 @@ const ButtonStyled = styled.button((props) => {
       white-space: normal;
       overflow: hidden;
       transition: color 2s;
-      font-style: normal;
       font-weight: 700;
       font-size: 16px;
       line-height: 140%;

@@ -44,8 +44,6 @@ export const SliderCard = styled.div`
 `;
 
 export const TitleSlide = styled.div`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
@@ -59,8 +57,6 @@ export const TitleSlide = styled.div`
 `;
 
 export const SubTitleSlide = styled.div`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 400;
   flex: none;
   order: 1;

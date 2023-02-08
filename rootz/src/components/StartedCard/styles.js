@@ -9,8 +9,6 @@ export const StartedCardContainer = styled.div`
 
 export const Title = styled.p`
   text-align: center;
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 150%;
@@ -20,8 +18,6 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 175%;
@@ -41,8 +37,6 @@ export const Container = styled.div`
 `;
 
 export const TitleForm = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -56,8 +50,6 @@ export const FormField = styled.input`
   border-radius: 40px;
   background: ${colors.White};
   color: ${colors.Gray};
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;

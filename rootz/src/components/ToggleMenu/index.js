@@ -7,12 +7,12 @@ import {
     ModalFooter,
     ModalHeader, TextButton,
 } from "./styles";
-import ToggleMenu from "../../img/Toggle";
-import {HR} from "../../../styles";
-import Logo from "../../img/Logo";
+import ToggleMenu from "../img/Toggle";
+import {HR} from "../styled/HR";
+import Logo from "../img/Logo";
 import {Header, ToggleButtonWrapper} from "../Header/styles";
-import Cross from "../../img/Cross";
-import {Button} from "../../ui/Button";
+import Cross from "../img/Cross";
+import {Button} from "../ui/Button";
 
 
 type Props = {

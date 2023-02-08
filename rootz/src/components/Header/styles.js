@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../../theme/default/styles";
+import {colors} from "../../theme/default/styles";
 
 export const Wrapper = styled.div`
   background-color: ${colors.HintOfRed};

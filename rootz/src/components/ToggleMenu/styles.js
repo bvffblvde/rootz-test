@@ -1,12 +1,10 @@
 import styled from "styled-components";
-import {colors} from "../../../theme/default/styles";
+import {colors} from "../../theme/default/styles";
 
 export const TextButton = styled.button`
   border: none;
   background: none;
-  color: black;
-  font-family: 'Poppins', serif;
-  font-style: normal;
+  color: ${colors.Black};
   font-weight: 400;
   font-size: 28px;
   line-height: 150%;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../../theme/default/styles";
+import {colors} from "../../theme/default/styles";
 
 export const FooterContainer = styled.footer`
   flex: 0 0 auto;
@@ -11,8 +11,6 @@ export const FooterContainer = styled.footer`
   }
 `;
 export const Title = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 48px;
@@ -24,8 +22,6 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -34,8 +30,6 @@ export const SubTitle = styled.p`
 `;
 
 export const Text = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 24px;

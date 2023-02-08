@@ -18,8 +18,6 @@ export const Card = styled.div`
 `;
 
 export const TextAbout = styled.text`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 213%;
@@ -38,8 +36,6 @@ export const SliderArea = styled.div`
 `;
 
 export const Title = styled.p`
-  font-family: 'Poppins', serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 150%;
@@ -49,7 +45,6 @@ export const Title = styled.p`
 `;
 
 export const SubTitle = styled.p`
-  font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 175%;
