@@ -8,7 +8,7 @@ export default function MembersBlock() {
                    alt="card"/>
           </div>
           <div className="item-stack-bottom">
-              <img src={require('../img/Parrot.png')} alt="Parrot"/>
+              <img src={require('../img/Parrot.svg').default} alt="Parrot"/>
           </div>
       </IconArea>
   );

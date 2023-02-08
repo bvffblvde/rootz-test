@@ -44,7 +44,7 @@ const descriptionText = [
     },
     {
         id: 6,
-        descriptions: 'Recycling is the process of converting waste materials into new materials and objects. It is an alternative to "conventional" waste disposal that can save material and help lower greenhouse gas emissions.'
+        descriptions: 'Recycling is the process of converting waste materials into new materials and objects.'
     },
 ];
 
@@ -76,8 +76,9 @@ class SwiperBar extends Component {
                 style={{
                     "--swiper-navigation-color": "#1E1A20",
                     "--swiper-pagination-color": "#1E1A20",
-                    "--swiper-pagination-bottom": "70px",
+                    "--swiper-pagination-bottom": "25px",
                     "--swiper-navigation-size": "17px",
+                    "height": "375px",
                 }}
                 breakpoints={breakpoints}
                 modules={[Navigation, Pagination, Scrollbar, A11y, Grid, EffectCards]}
@@ -91,10 +92,13 @@ class SwiperBar extends Component {
             >
                 {title.map((item) => (
                     <SwiperSlide key={item.id} className="swiper">
-                            <SliderCard>
+                        {/*<img src={require('../../img/Figure.svg').default} alt="icon"/>*/}
+                        <SliderCard>
+                            <div className="slide-card">
                                 <TitleSlide>{item.label}</TitleSlide>
                                 <SubTitleSlide>{descriptionText[item.id - 1].descriptions}</SubTitleSlide>
-                            </SliderCard>
+                            </div>
+                        </SliderCard>
                     </SwiperSlide>
                 ))}
 
