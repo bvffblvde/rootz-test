@@ -1,8 +1,13 @@
 import styled from "styled-components";
-import {colors} from "../../../theme/default/styles";
+import {colors, sizes} from "../../../theme/default/styles";
 
 export const MoreInfoContainer = styled.div`
   margin-top: 48px;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    width: 40%;
+    margin-top: 0;
+  }
 `;
 
 export const TitleArea = styled.div`
@@ -18,6 +23,12 @@ export const DescriptionTitle = styled.p`
   color: ${colors.BalticSea};
   opacity: 0.9;
   margin: 0;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 24px;
+    line-height: 34px;
+    margin-right: 15px;
+  }
 `;
 
 export const Description = styled.p`
@@ -26,6 +37,11 @@ export const Description = styled.p`
   line-height: 175%;
   color: ${colors.BalticSea};
   opacity: 0.9;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 `;
 
 export const CircleButton = styled.button`

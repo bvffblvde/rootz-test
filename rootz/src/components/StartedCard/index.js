@@ -7,9 +7,12 @@ class StartedCard extends React.Component {
     render() {
         return (
             <StartedCardContainer>
-                <Title>Get Started Today!</Title>
-                <SubTitle>Learn more about how you can save our planet's nature. From smart consumption to switching to
-                    renewable energy, each of us can do our part to save the planet. </SubTitle>
+                <div className="title-block">
+                    <Title>Get Started Today!</Title>
+                    <SubTitle>Learn more about how you can save our planet's nature. From smart consumption to switching
+                        to
+                        renewable energy, each of us can do our part to save the planet. </SubTitle>
+                </div>
                 <Container>
                     <TitleForm>Log in</TitleForm>
                     <div className="form-field-area">

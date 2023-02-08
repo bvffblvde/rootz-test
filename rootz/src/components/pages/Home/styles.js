@@ -8,7 +8,7 @@ export const Card = styled.div`
 
   .wrapper {
     margin: 30px 0 40px;
-    
+
     @media (min-width: ${sizes.tablet}px) {
       margin: 30px 0 48px;
     }
@@ -19,7 +19,7 @@ export const Card = styled.div`
     margin: auto;
     width: 336px;
     height: 181px;
-    
+
     @media (min-width: ${sizes.tablet}px) {
       width: 543px;
       height: 293px;
@@ -46,7 +46,7 @@ export const TextAbout = styled.text`
   line-height: 213%;
   color: ${colors.Black};
   margin-bottom: 40px;
-  
+
   @media (min-width: ${sizes.tablet}px) {
     font-size: 16px;
   }
@@ -55,11 +55,28 @@ export const TextAbout = styled.text`
 export const Container = styled.div`
   margin: 100px 0 0;
   padding: 0 18px 0;
+  
+  .drop-list-area {
+    @media (min-width: ${sizes.tablet}px) {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: ${sizes.tablet}px) {
+    margin: 0;
+    padding: 0 160px 195px;
+    display: flex;
+    justify-content: space-between;
+  }
 `;
 
 export const SliderArea = styled.div`
   background: ${colors.WaxFlower};
   margin-top: 76px;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    margin-top: 0;
+  }
 `;
 
 export const Title = styled.p`
@@ -69,6 +86,12 @@ export const Title = styled.p`
   color: ${colors.EbonyClay};
   margin: 0 0 20px;
   text-transform: capitalize;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 40px;
+    line-height: 56px;
+    margin: 0 0 40px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -79,11 +102,17 @@ export const SubTitle = styled.p`
   mix-blend-mode: normal;
   opacity: 0.9;
   margin: 0 0 32px;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0 0 56px;
+  }
 `;
 
 export const TeamPictureArea = styled.div`
   margin-bottom: 110px;
-  
+
   .item-stack-top {
     content: ' ';
     display: table;
@@ -120,16 +149,23 @@ export const TeamPictureArea = styled.div`
     position: relative;
     z-index: 1;
   }
-  
+
   .item-stack-bottom-right {
     padding-top: 15%;
     margin-right: 10%;
     float: right;
   }
-  
+
   .item-stack-bottom-left {
     padding-top: 15%;
     padding-left: 15%;
     float: left;
+  }
+`;
+
+export const CardArea = styled.div`
+  
+  @media (min-width: ${sizes.tablet}px) {
+    padding: 124px 160px 195px;
   }
 `;

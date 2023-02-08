@@ -1,10 +1,27 @@
-import {colors} from "../../theme/default/styles";
+import {colors, sizes} from "../../theme/default/styles";
 import styled from "styled-components";
 
 export const StartedCardContainer = styled.div`
   background: ${colors.WaxFlower};
   border-radius: 20px;
   padding: 42px 18px 56px;
+  display: block;
+  
+  .title-block {
+    width: 100%;
+
+    @media (min-width: ${sizes.tablet}px) {
+      padding-top: 5%;
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: ${sizes.tablet}px) {
+    padding: 104px 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
 `;
 
 export const Title = styled.p`
@@ -15,6 +32,13 @@ export const Title = styled.p`
   text-transform: capitalize;
   margin: 0 0 20px;
   color: ${colors.EbonyClay};
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 40px;
+    line-height: 56px;
+    text-align: left;
+    margin: 0 0 40px;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -24,6 +48,11 @@ export const SubTitle = styled.p`
   opacity: 0.9;
   color: ${colors.BalticSea};
   margin: 0 0 55px;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 18px;
+    line-height: 32px;
+  }
 `;
 
 export const Container = styled.div`
@@ -34,6 +63,10 @@ export const Container = styled.div`
   .form-field-area {
     display: grid;
   }
+  
+  @media (min-width: ${sizes.tablet}px) {
+    width: 40%;
+  }
 `;
 
 export const TitleForm = styled.p`
@@ -43,6 +76,11 @@ export const TitleForm = styled.p`
   text-transform: capitalize;
   margin: 0 0 24px;
   text-align: center;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 32px;
+    line-height: 56px;
+  }
 `;
 
 export const FormField = styled.input`

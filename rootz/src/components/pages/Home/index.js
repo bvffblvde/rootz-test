@@ -1,5 +1,14 @@
 import React from 'react';
-import {Card, Container, SliderArea, SubTitle, TeamPictureArea, TextAbout, Title} from "./styles";
+import {
+    Card,
+    CardArea,
+    Container,
+    SliderArea,
+    SubTitle,
+    TeamPictureArea,
+    TextAbout,
+    Title
+} from "./styles";
 import SearchBar from "../../ui/SearchBar";
 import StartedCard from "../../StartedCard";
 import MembersBlock from "../../MembersBlock";
@@ -17,7 +26,8 @@ class Home extends React.Component {
                     <div className="flex-container">
                         <div>
                             <div>
-                                <img src={require('../../img/Headline.svg').default} alt="Headline" className="icon-position"/>
+                                <img src={require('../../img/Headline.svg').default} alt="Headline"
+                                     className="icon-position"/>
                             </div>
                             <div className="wrapper">
                                 <TextAbout>The scale of the challenges facing our planet can seem daunting, but we can
@@ -50,13 +60,17 @@ class Home extends React.Component {
                         </div>
                     </TeamPictureArea>
                 </Container>
-                <StartedCard/>
+                <CardArea>
+                    <StartedCard/>
+                </CardArea>
                 <Container>
-                    <Title>Ready to Get started?</Title>
-                    <SubTitle>When pattern is mentioned in interior design, it is easy to asso- ciate it with a
-                        geometric
-                        patterned wallpaper or colourful prints on interior fabrics.</SubTitle>
-                    <Button variant="primaryOrange" padding={'15px 36px'}>Contact us</Button>
+                    <div className="drop-list-area">
+                        <Title>Ready to Get started?</Title>
+                        <SubTitle>When pattern is mentioned in interior design, it is easy to asso- ciate it with a
+                            geometric
+                            patterned wallpaper or colourful prints on interior fabrics.</SubTitle>
+                        <Button variant="primaryOrange" padding={'15px 36px'}>Contact us</Button>
+                    </div>
                     <DropDownList/>
                 </Container>
                 <SliderArea>

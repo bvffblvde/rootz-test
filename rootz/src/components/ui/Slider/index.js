@@ -89,13 +89,12 @@ class SwiperBar extends Component {
                 resizeObserver={true}
                 loop={true}
                 centeredSlides={true}
-                pagination={{type: "fraction", clickable: true}}
+                pagination={{type: "fraction"}}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
             >
                 {title.map((item) => (
                     <SwiperSlide key={item.id} className="swiper">
-                        {/*<img src={require('../../img/Figure.svg').default} alt="icon"/>*/}
                         <SliderCard>
                             <div className="slide-card">
                                 {item.id === 1 && <img src={require('../../img/water.svg').default} alt="water"/>}

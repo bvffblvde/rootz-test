@@ -19,6 +19,7 @@ export const SearchBarWrapper = styled.div`
     outline: none;
     background-color: unset;
     text-align: center;
+    width: 50%;
   }
   
   svg {
