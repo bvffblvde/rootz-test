@@ -59,14 +59,34 @@ export const SliderCard = styled.div`
           transform: translate(0, 10px);
         }
       }
+      @media (min-width: ${sizes.mobileMax}px) {
+        width: 30%;
+        top: 5%;
+      }
+
       @media (min-width: ${sizes.netbook}px) {
-        width: 50%;
-        top: 20%;
+        width: 52%;
+        top: 15%;
+      }
+      
+      @media (min-width: ${sizes.desktop}px) {
+        width: 55%;
+        top: 12%;
       }
     }
-    
+
+    @media (min-width: ${sizes.mobileMax}px) {
+      padding-top: 30%;
+    }
+
+    @media (min-width: ${sizes.tabletMin}px) {
+      padding-top: 22%;
+      padding-left: 25%;
+      width: 50%;
+    }
+
     @media (min-width: ${sizes.netbook}px) {
-      padding-top: 90%;
+      padding-top: 80%;
     }
   }
 `;
@@ -82,6 +102,13 @@ export const TitleSlide = styled.div`
   flex-grow: 0;
   text-align: center;
   padding-bottom: 10px;
+
+  @media (min-width: ${sizes.tablet}px) {
+    padding-top: 20%;
+  }
+  @media (min-width: ${sizes.netbook}px) {
+    padding-top: 0;
+  }
 `;
 
 export const SubTitleSlide = styled.div`
@@ -95,6 +122,10 @@ export const SubTitleSlide = styled.div`
   color: ${colors.BalticSea};
   opacity: 0.9;
   padding: 0 60px 0;
+
+  @media (min-width: ${sizes.tablet}px) {
+    padding: 0;
+  }
 `;
 
 export const Container = styled.div`

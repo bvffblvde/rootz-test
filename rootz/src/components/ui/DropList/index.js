@@ -51,8 +51,14 @@ class DropDownList extends React.Component<Props, State> {
         this.setState({isMenuOpen: false});
     }
 
-    setState = (state, callback) => {
-        super.setState(state, callback);
+    setState = (state) => {
+        super.setState(state);
+
+        if (state.isMenuOpen) {
+            this.openMenu();
+        } else {
+            this.closeMenu();
+        }
     }
 
     renderToggleMenu = () => {
