@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {Outlet} from "react-router";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+    authenticate(){
+        return new Promise(resolve => setTimeout(resolve, 300))
+    }
+
+    componentDidMount(){
+        this.authenticate().then(() => {
+            const ele = document.getElementById('ipl-progress-indicator')
+            if(ele){
+                ele.classList.add('available')
+                setTimeout(() => {
+                    ele.outerHTML = ''
+                }, 300)
+            }
+        })
+    }
+    render() {
+        return (
+            <div>
+                <Header/>
+                <Outlet/>
+                <Footer/>
+            </div>
+        );
+    };
 }
 
 export default App;
