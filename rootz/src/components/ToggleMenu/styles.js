@@ -44,6 +44,8 @@ export const ButtonArea = styled.div`
   display: grid;
   justify-content: center;
   align-items: center;
+  // height: 100vh;
+  background-color: ${colors.HintOfRed};
 `;
 
 export const Modal = styled.div`
@@ -71,7 +73,6 @@ export const Modal = styled.div`
 
 export const ModalContent = styled.div`
   background-color: ${colors.HintOfRed};
-  height: 100vh;
   display: grid;
 `;
 
@@ -95,5 +96,5 @@ export const ModalFooter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 20px 150px;
 `;

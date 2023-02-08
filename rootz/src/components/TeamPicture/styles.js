@@ -77,7 +77,7 @@ export const TeamPictureArea = styled.div`
       float: unset;
       width: 80%;
       margin-top: 40%;
-      margin-left: -17%;
+      margin-left: -27%;
     }
   }
 

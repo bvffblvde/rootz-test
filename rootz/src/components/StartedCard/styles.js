@@ -64,6 +64,11 @@ export const Container = styled.div`
     display: grid;
   }
   
+  //.lief-position {
+  //  position: relative;
+  //  margin-left: calc(50vw - 120%);
+  //}
+  
   @media (min-width: ${sizes.desktop}px) {
     width: 40%;
   }
