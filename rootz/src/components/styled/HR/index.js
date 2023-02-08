@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../../theme/default/styles";
+import {colors, sizes} from "../../../theme/default/styles";
 
 export const HR = styled.hr`
   height: 3px;
@@ -7,4 +7,8 @@ export const HR = styled.hr`
   background-color: ${colors.EbonyClay};
   border: none;
   outline: none;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    margin: 0 80px;
+  }
 `;

@@ -6,11 +6,10 @@ const theme = {
             color: colors.Black,
             backgroundColor: colors.White,
             borderRadius: '40px',
-            width: '100%',
         },
         hover: {
             color: colors.White,
-            backgroundColor: colors.Black,
+            backgroundColor: colors.CornFlowerBlue,
         },
     },
     primaryOrange: {

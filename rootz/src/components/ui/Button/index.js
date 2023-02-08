@@ -53,7 +53,7 @@ const ButtonStyled = styled.button((props) => {
       font-size: 16px;
       line-height: 140%;
       margin: ${props => props.margin || '0'};
-      width: ${props => props.fullWidth ? '100%' : 'auto'};
+      width: ${props => props.fullWidth ? '100%' : ''};
 
       ${btnTheme.default};
       ${space};

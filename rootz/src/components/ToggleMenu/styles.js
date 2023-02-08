@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {colors} from "../../theme/default/styles";
+import {colors, sizes} from "../../theme/default/styles";
 
 export const TextButton = styled.button`
   border: none;
@@ -10,6 +10,7 @@ export const TextButton = styled.button`
   line-height: 150%;
   opacity: 0.8;
   margin-bottom: 56px;
+  text-decoration: none;
   
   &:active, &:focus {
     font-weight: 700;
@@ -25,6 +26,12 @@ export const TextButton = styled.button`
     100% {
       transform: translateX(0);
     }
+  }
+  @media (min-width: ${sizes.tablet}px) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 0;
   }
 `;
 

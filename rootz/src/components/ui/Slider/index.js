@@ -110,7 +110,6 @@ class SwiperBar extends Component {
                         </SliderCard>
                     </SwiperSlide>
                 ))}
-
             </Swiper>
         );
     }
