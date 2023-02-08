@@ -28,19 +28,19 @@ const descriptionText = [
     },
     {
         id: 2,
-        descriptions: 'The world’s forests are disappearing at an alarming rate. Planting trees is one of the most effective ways to combat climate change.'
+        descriptions: 'The world’s forests are disappearing at an alarming rate.'
     },
     {
         id: 3,
-        descriptions: 'The energy sector is responsible for 70% of global greenhouse gas emissions. Reducing energy consumption is one of the most effective ways to reduce your carbon footprint.'
+        descriptions: 'The energy sector is responsible for 70% of global greenhouse gas emissions.'
     },
     {
         id: 4,
-        descriptions: 'Plastic is a major threat to the environment. It is estimated that 8 million tons of plastic end up in the ocean every year.'
+        descriptions: 'Plastic is a major threat to the environment.'
     },
     {
         id: 5,
-        descriptions: 'Organic farming is a system of farming that avoids the use of synthetic fertilizers, pesticides, growth regulators and livestock feed additives.'
+        descriptions: 'Organic farming is a system that avoids or largely excludes the use of synthetic inputs.'
     },
     {
         id: 6,
@@ -86,6 +86,9 @@ class SwiperBar extends Component {
                 resistance={false}
                 rewind={true}
                 navigation
+                resizeObserver={true}
+                loop={true}
+                centeredSlides={true}
                 pagination={{type: "fraction", clickable: true}}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}
@@ -95,6 +98,12 @@ class SwiperBar extends Component {
                         {/*<img src={require('../../img/Figure.svg').default} alt="icon"/>*/}
                         <SliderCard>
                             <div className="slide-card">
+                                {item.id === 1 && <img src={require('../../img/water.svg').default} alt="water"/>}
+                                {item.id === 2 && <img src={require('../../img/forest.svg').default} alt="forest"/>}
+                                {item.id === 3 && <img src={require('../../img/energy.svg').default} alt="energy"/>}
+                                {item.id === 4 && <img src={require('../../img/plastic.svg').default} alt="plastic"/>}
+                                {item.id === 5 && <img src={require('../../img/organic.svg').default} alt="organic"/>}
+                                {item.id === 6 && <img src={require('../../img/plastic.svg').default} alt="recycling"/>}
                                 <TitleSlide>{item.label}</TitleSlide>
                                 <SubTitleSlide>{descriptionText[item.id - 1].descriptions}</SubTitleSlide>
                             </div>

@@ -38,8 +38,28 @@ export const SliderCard = styled.div`
   }
 
   .slide-card {
-    // height: 100%;
-    padding-top: 30%;
+    padding-top: 40%;
+
+    img {
+      position: absolute;
+      width: 40%;
+      top: 2%;
+      left: 5%;
+      transform: translate(-50%, -50%);
+      animation-name: slide;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in-out;
+      @keyframes slide {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(0, 10px);
+        }
+      }
+    }
   }
 `;
 

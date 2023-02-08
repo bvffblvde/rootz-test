@@ -15,8 +15,4 @@ const sizes = {
     desktop: 1024,
 };
 
-const fonts = {
-    avenir: 'Avenir',
-};
-
-export { colors, sizes, fonts };
+export { colors, sizes };
