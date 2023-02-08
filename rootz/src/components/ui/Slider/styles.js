@@ -127,8 +127,3 @@ export const SubTitleSlide = styled.div`
     padding: 0;
   }
 `;
-
-export const Container = styled.div`
-  margin: 15px 10px 40px;
-  padding: 20px 0 20px 20px;
-`;
