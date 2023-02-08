@@ -16,6 +16,10 @@ export const TextButton = styled.button`
     font-weight: 700;
     font-size: 28px;
     line-height: 150%;
+    
+    @media (min-width: ${sizes.tablet}px) {
+      font-size: 16px;
+    }
   }
   animation: ease-in 0.3s;
   animation-name: slideInFromTop;
