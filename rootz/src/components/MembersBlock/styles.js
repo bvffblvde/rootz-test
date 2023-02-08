@@ -13,8 +13,8 @@ export const IconArea = styled.div`
     z-index: 1;
     
     @media (min-width: ${sizes.tablet}px) {
-      grid-column: 2 / span 9;
-      padding-top: 22%;
+      grid-column: 1 / span 9;
+      padding-top: 70%;
     }
   }
 

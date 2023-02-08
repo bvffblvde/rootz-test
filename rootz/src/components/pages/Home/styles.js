@@ -7,13 +7,23 @@ export const Card = styled.div`
   text-align: center;
 
   .wrapper {
-    margin-bottom: 40px;
-    margin-top: 30px;
+    margin: 30px 0 40px;
+    
+    @media (min-width: ${sizes.tablet}px) {
+      margin: 30px 0 48px;
+    }
   }
 
   .icon-position {
     display: block;
     margin: auto;
+    width: 336px;
+    height: 181px;
+    
+    @media (min-width: ${sizes.tablet}px) {
+      width: 543px;
+      height: 293px;
+    }
   }
 
   .flex-container {
@@ -24,8 +34,9 @@ export const Card = styled.div`
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${sizes.tablet}px) {
     padding: 120px 80px 0;
+    display: flex;
   }
 `;
 
@@ -35,6 +46,10 @@ export const TextAbout = styled.text`
   line-height: 213%;
   color: ${colors.Black};
   margin-bottom: 40px;
+  
+  @media (min-width: ${sizes.tablet}px) {
+    font-size: 16px;
+  }
 `;
 
 export const Container = styled.div`

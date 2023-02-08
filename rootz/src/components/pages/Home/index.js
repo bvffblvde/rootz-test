@@ -1,5 +1,4 @@
 import React from 'react';
-import Headline from "../../img/Headline";
 import {Card, Container, SliderArea, SubTitle, TeamPictureArea, TextAbout, Title} from "./styles";
 import SearchBar from "../../ui/SearchBar";
 import StartedCard from "../../StartedCard";
@@ -18,7 +17,7 @@ class Home extends React.Component {
                     <div className="flex-container">
                         <div>
                             <div>
-                                <Headline className="icon-position"/>
+                                <img src={require('../../img/Headline.svg').default} alt="Headline" className="icon-position"/>
                             </div>
                             <div className="wrapper">
                                 <TextAbout>The scale of the challenges facing our planet can seem daunting, but we can
